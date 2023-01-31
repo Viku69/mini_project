@@ -116,21 +116,56 @@
  }
 
 
-.believe {
+.fixed {
 		text-align: center;
 		font-size: 1.8rem;
 		color: red;
 		font-weight: 700;
 		text-transform: uppercase;
+		
 	}
 	
-.matter {
+.moving {
 		text-align: center;
-		font-size: 1.8rem;
-		color:black;
-		font-weight: 700;
 		text-transform: uppercase;
+		overflow: hidden;
 	}
+
+
+.moving li{
+	color:black;
+	font-size: 1.8rem;
+	font-weight: 700;
+	list-style: none;
+	position: relative;
+    top: 0;
+	animation: move 6s steps(4) infinite;
+	
+}
+
+@keyframes move{
+	100%{
+		top: -260px;
+	}
+}
+
+.moving li span:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.844);
+	border-left: 2px solid #0e0f0e;
+	animation: type 1.5s steps(10) infinite;
+}
+@keyframes type{
+	100%{
+		left: 100%;
+		margin: 0 -35px 0 35px;
+	}
+}
+
  .aboutinfo {
 	
  	display: flex;
