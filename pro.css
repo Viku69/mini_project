@@ -1,0 +1,47 @@
+h1{
+    color: #303841;
+    text-decoration: underline;
+    font-size: 40;
+}
+body{
+    background-color: #EEEEEE;
+}
+p{
+    font-size: 25;
+}
+blockquote{
+    font-size: 25;
+}
+.quest{
+    padding: 0px 10px;
+    color: #3A4750;
+    font-size: 30;
+
+}
+.btn{
+    height: 50px;
+    width: 100px;
+    color: aliceblue;
+    background-color: rgb(0, 87, 58);
+    border: 0px;
+    border-radius: 5px;
+
+}
+
+hr{
+    border: 1px solid white;
+    width: 90%;
+    margin: 5rem auto;
+}
+section{
+    padding: 0px 40%;
+}
+.submitbtndiv{
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 5px;
+
+}

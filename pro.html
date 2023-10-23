@@ -2,8 +2,8 @@
 
 <head>
 
-<title>Attempt Quiz</title>
-
+<title>Quiz Questions And Answers</title>
+<link rel="stylesheet" href="pro.css">
 </head>
 
 <body>
@@ -16,9 +16,11 @@
 
 <p>
 
-<b>Question 1.
+<b><h2 class="quest">Question 1.</h2>
+<p>
+    He -------------------- it.</b>
 
-<br>He -------------------- it.<br></b>
+</p>
 
 <blockquote>
 
@@ -34,9 +36,15 @@
 
 <hr>
 
-Question 2.
+<h2 class="quest">Question 2.</h2>
 
-<br>They -------------------- here very often.<br></b>
+<br>
+<p>
+    They -------------------- here very often.
+
+</p>
+
+<br></b>
 
 <blockquote>
 
@@ -52,9 +60,12 @@ Question 2.
 
 <hr>
 
-Question 3.
+<h2 class="quest">Question 3.</h2>
 
-<br>John and Mary -------------------- twice a week.<br></b>
+<p>
+
+    <br>John and Mary -------------------- twice a week.<br></b>
+</p>
 
 <blockquote>
 
@@ -70,9 +81,11 @@ Question 3.
 
 <hr>
 
-Question 4.
+<h2 class="quest">Question 4.</h2>
+<p>
 
-<br>I -------------------- mind at all.<br></b>
+    <br>I -------------------- mind at all.<br></b>
+</p>
 
 <blockquote>
 
@@ -88,9 +101,11 @@ Question 4.
 
 <hr>
 
-Question 5.
+<h2 class="quest">Question 5.</h2>
+<p>
 
-<br>It -------------------- sense.<br></b>
+    <br>It -------------------- sense.<br></b>
+</p>
 
 <blockquote>
 
@@ -106,9 +121,13 @@ Question 5.
 
 <hr>
 
-Question 6.
+<h2 class="quest">Question 6.</h2>
 
-<br>They -------------------- happy.<br></b>
+<br>
+<p>
+
+    They -------------------- happy.<br></b>
+</p>
 
 <blockquote>
 
@@ -119,12 +138,14 @@ Question 6.
 <input type="radio" name="q6" value="seeming">seeming<br>
 
 </blockquote>
-
+<hr>
 <p><b>
 
-Question 7.
+<h2 class="quest">Question 7.</h2>
+<p>
 
-<br>You -------------------- to do it.<br></b>
+    <br>You -------------------- to do it.<br></b>
+</p>
 
 <blockquote>
 
@@ -140,9 +161,11 @@ Question 7.
 
 <hr>
 
-Question 8.
+<h2 class="quest">Question 8.</h2>
+<p>
 
-<br>She -------------------- a brother.<br></b>
+    <br>She -------------------- a brother.<br></b>
+</p>
 
 <blockquote>
 
@@ -158,9 +181,11 @@ Question 8.
 
 <hr>
 
-Question 9.
+<h2 class="quest">Question 9.</h2>
+<p>
 
-<br>The journey -------------------- an hour.<br></b>
+    <br>The journey -------------------- an hour.<br></b>
+</p>
 
 <blockquote>
 
@@ -176,9 +201,11 @@ Question 9.
 
 <hr>
 
-Question 10.
+<h2 class="quest">Question 10.</h2>
+<p>
 
-<br>I -------------------- it now.<br></b>
+    <br>I -------------------- it now.<br></b>
+</p>
 
 <blockquote>
 
@@ -194,9 +221,11 @@ Question 10.
 
 <hr>
 
-Question 11.
+<h2 class="quest">Question 11.</h2>
+<p>
 
-<br>Peggy -------------------- by bus.<br></b>
+    <br>Peggy -------------------- by bus.<br></b>
+</p>
 
 <blockquote>
 
@@ -212,9 +241,11 @@ Question 11.
 
 <hr>
 
-Question 12.
+<h2 class="quest">Question 12.</h2>
+<p>
 
-<br>She --------------------.<br></b>
+    <br>She --------------------.<br></b>
+</p>
 
 <blockquote>
 
@@ -230,9 +261,11 @@ Question 12.
 
 <hr>
 
-Question 13.
+<h2 class="quest">Question 13.</h2>
+<p>
 
-<br>She -------------------- hard.<br></b>
+    <br>She -------------------- hard.<br></b>
+</p>
 
 <blockquote>
 
@@ -248,9 +281,11 @@ Question 13.
 
 <hr>
 
-Question 14.
+<h2 class="quest">Question 14.</h2>
+<p>
 
-<br>They -------------------- football every weekend.<br></b>
+    <br>They -------------------- football every weekend.<br></b>
+</p>
 
 <blockquote>
 
@@ -266,9 +301,11 @@ Question 14.
 
 <hr>
 
-Question 15.
+<h2 class="quest">Question 15.</h2>
+<p>
 
-<br>The exam -------------------- two hours.<br></b>
+    <br>The exam -------------------- two hours.<br></b>
+</p>
 
 <blockquote>
 
@@ -281,14 +318,20 @@ Question 15.
 </blockquote>
 
 <p><b>
+    <div class="submitbtndiv">
+        <input class="btn" type="button" value="Grade Me" onClick="getScore(this.form);"> 
+        
+        <input class="btn" type="reset" value="Clear"><p>
+        
+            
+    </div>
 
-<input type="button"value="Grade Me"onClick="getScore(this.form);">
+<div>
+    Number of score out of 15 = <input type= text size 15 name= "mark"><br>
+    <p></p>
+    Score in percentage = <input type=text size=15 name="percentage"><br>
 
-<input type="reset" value="Clear"><p>
-
-Number of score out of 15 = <input type= text size 15 name= "mark">
-
-Score in percentage = <input type=text size=15 name="percentage"><br>
+</div>    
 
 </form>
 
@@ -299,91 +342,6 @@ Score in percentage = <input type=text size=15 name="percentage"><br>
 </form>
 
 </body>
-
-<script>
-
-var numQues = 15;
-
-var numChoi = 3;
-
-var answers = new Array(15);
-
-answers[0] = "doesn't like";
-
-answers[1] = "don't come";
-
-answers[2] = "come";
-
-answers[3] = "don't";
-
-answers[4] = "doesn't make";
-
-answers[5] = "seem";
-
-answers[6] = "don't have";
-
-answers[7] = "doesn't have";
-
-answers[8] = "takes";
-
-answers[9] = "want";
-
-answers[10] = "comes";
-
-answers[11] = "doesn't know";
-
-answers[12] = "tries";
-
-answers[13] = "play";
-
-answers[14] = "lasts";
-
-function getScore(form) {
-
-var score = 0;
-
-var currElt;
-
-var currSelection;
-
-for (i=0; i<numQues; i++) {
-
-currElt = i*numChoi;
-
-answered=false;
-
-for (j=0; j<numChoi; j++) {
-
-currSelection = form.elements[currElt + j];
-
-if (currSelection.checked) {
-
-answered=true;
-
-if (currSelection.value == answers[i]) {
-
-score++;
-
-break;
-
-}
-
-}
-
-}
-
-if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
-
-}
-
-var scoreper = Math.round(score/numQues*100);
-
-form.percentage.value = scoreper + "%";
-
-form.mark.value=score;
-
-}
-
-</script>
+<script src="main.js"></script>
 
 </html>
