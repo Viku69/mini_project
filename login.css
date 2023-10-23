@@ -14,7 +14,7 @@ body {
 	
 }
 
-.logbtn {
+/* .logbtn {
     display: flex;
     background-color: whitesmoke;
     align-items: center;
@@ -22,10 +22,10 @@ body {
     height: 10vh;
     width: 100%;
 
-}
+} */
 
 #login-form {
-    display: none;
+    display: block;
 }
 
 .form-box {
